@@ -9,6 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: wall_stone
   m_Shader: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -17,14 +19,16 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 441076a003b36094aa56d0bfa30b61de, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4587505c22b71d64386c1f9fb6c150e5, type: 3}
         m_Scale: {x: 2.31, y: 0.2}
         m_Offset: {x: 1, y: 1}
     m_Ints: []
     m_Floats: []
     m_Colors: []
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

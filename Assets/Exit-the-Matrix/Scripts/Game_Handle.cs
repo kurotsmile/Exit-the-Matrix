@@ -6,6 +6,7 @@ public class Game_Handle : MonoBehaviour
 {
     [Header("Obj Game")]
     public Carrot.Carrot carrot;
+    public IronSourceAds ads;
     public Player_main player_play;
     public Image img_status_audio;
     public Sprite sp_icon_audio_on;
@@ -45,6 +46,10 @@ public class Game_Handle : MonoBehaviour
     void Start()
     {
         this.carrot.Load_Carrot(this.check_exit_app);
+
+        this.ads.On_Load();
+        this.carrot.act_buy_ads_success=this.ads.RemoveAds;
+
         this.panel_menu.SetActive(true);
         this.panel_play.SetActive(false);
         this.panel_done.SetActive(false);
@@ -107,7 +112,7 @@ public class Game_Handle : MonoBehaviour
     {
         this.timer = 0f;
         this.fruit = 0;
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
         this.load_map();
         this.carrot.play_sound_click();
         this.is_play = true;
@@ -120,7 +125,7 @@ public class Game_Handle : MonoBehaviour
 
     public void btn_back_menu()
     {
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
         this.carrot.play_sound_click();
         this.is_play = false;
         this.panel_play.SetActive(false);
@@ -148,7 +153,7 @@ public class Game_Handle : MonoBehaviour
 
     public void btn_show_setting()
     {
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
         Carrot.Carrot_Box box_setting = this.carrot.Create_Setting();
         box_setting.set_act_before_closing(this.act_before_close);
     }
@@ -224,7 +229,7 @@ public class Game_Handle : MonoBehaviour
             this.panel_high_scores.SetActive(true);
         }
 
-        this.carrot.ads.show_ads_Interstitial();
+        this.ads.show_ads_Interstitial();
         this.is_play = false;
         this.panel_play.SetActive(false);
         this.panel_done.SetActive(true);
@@ -253,7 +258,7 @@ public class Game_Handle : MonoBehaviour
 
     public void btn_reset()
     {
-       this.msg_question_reset=this.carrot.show_msg("Reset game","Are you sure you want to reset the level?", act_reset_yes, act_reset_no);
+       this.msg_question_reset=this.carrot.Show_msg("Reset game","Are you sure you want to reset the level?", act_reset_yes, act_reset_no);
     }
 
     private void act_reset_yes()
