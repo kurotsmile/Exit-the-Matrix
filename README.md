@@ -1,6 +1,8 @@
 # Exit the Maze
 
-![Exit the Maze Banner](https://via.placeholder.com/1200x400?text=Exit+the+Maze)
+<p align="center">
+  <img src="Assets/Exit-the-Matrix/Images/icon.png" width="256" height="256" alt="Exit the Maze Icon">
+</p>
 
 ## About The Game
 
@@ -19,9 +21,9 @@ With many mysterious mazes, relaxing background music, and competitive leaderboa
 - Beautiful and mysterious maze environments
 - Relaxing background music
 - Collect fruits scattered throughout the maze
-- Increasingly difficult levels
+- Increasingly difficult maze levels
 - Simple and intuitive controls
-- Leaderboard system to compete with players worldwide
+- Online leaderboard competition
 - Casual gameplay suitable for all ages
 - Lightweight and optimized performance
 
@@ -34,7 +36,7 @@ With many mysterious mazes, relaxing background music, and competitive leaderboa
 - Find the correct path to escape
 - Avoid getting trapped in dead ends
 - Complete levels with the highest score possible
-- Compete against other players on the global leaderboard
+- Compete against players worldwide
 
 ---
 
@@ -50,7 +52,7 @@ Now it is your responsibility to guide Nana through dangerous labyrinths, collec
 
 | Maze Adventure | Fruit Collection | Escape Challenge |
 |---|---|---|
-| Add your screenshot here | Add your screenshot here | Add your screenshot here |
+| Add screenshot here | Add screenshot here | Add screenshot here |
 
 ---
 
